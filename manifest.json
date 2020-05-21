@@ -1,0 +1,28 @@
+{
+  "manifest_version": 2,
+  "name": "urlbar-richsuggestion-tester",
+  "description": "Adds an experimental search engine to Firefox to test new search features.",
+  "version": "0.0.2",
+  "applications": {
+    "gecko": {
+      "id": "urlbar-richsuggestion-tester@harrytwyford.com",
+      "strict_min_version": "78.0a1"
+    }
+  },
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "urlbar-richsuggestion-tester@harrytwyford.com",
+      "strict_min_version": "78.0a1"
+    }
+  },
+  "chrome_settings_overrides": {
+    "search_provider": {
+      "name": "Google (firefox-dev)",
+      "search_url": "https://www.google.com/search?client=firefox-b-d&q={searchTerms}",
+      "suggest_url": "https://www.google.com/complete/search?client=firefox-dev&q={searchTerms}",
+      "keyword": "gdev",
+      "favicon_url": "https://www.google.com/favicon.ico",
+      "is_default": true
+    }
+  }
+}
